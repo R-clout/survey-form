@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">PROVIDE FEEDBACK</h1>
+            <h2 class="subtitle">Survey form</h2>
+            <p class="description">Have you worked with us and would like to give us some feedback about our work or
+                service provided then please fill out survey form below.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Full Name</label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="First and Last Name"
+                    required></input>
+            </div>
+            <div class="form-group">
+                <Label for="email" id="email-label">Email Address</Label>
+                <input class="form-control" id="email" type="email" name="email" placeholder="Insert Email Address"
+                    required></input>
+            </div>
+            <div class="form-group">
+                <p>1. The service/work provided was completed in a timely manner.</p>
+                <select class="form-control" name="role" id="dropdown" required>
+                    <option value disabled selected>please select answers below</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="prfno">Prefer not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>2. The quality of work was high in quality.</p>
+                <select name="quality" id="dropdown" class="form-control">
+                    <option value disabled selected>choose</option>
+                    <option value="great">Great</option>
+                    <option value="notbad">Not Bad</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Additional Comments Section</p>
+                <textarea id="comments" class="textarea" name="comments" class="form-control"
+                    placeholder="onliine lo wa, o le soro to ba wu e"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="submit" class="submit-button">Send Responses</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

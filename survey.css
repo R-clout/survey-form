@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    padding-left:  70px;
+    padding-top: 30px;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+}
+.subtitle {
+    font-weight: 3;
+    font-family: serif;
+    font-style: bold;
+}
+.description {
+    font-size: 14px; 
+    font-family: monospace;
+    width: 90%;
+    word-spacing: 9px;
+}
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.26rem;
+    margin-top: 15px;
+}
+.form-group {
+    margin: 12px auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-control {
+    display: block;
+    width: 89%;
+    height: 2.15rem;
+    border-radius: 3px
+}
+textarea {
+    width: 80%;
+    min-height: 120px;
+    padding: 0.625rem;
+    font-family: inherit;
+}
+@media (max-width: 452px) {
+    label {
+        margin-top: 30px;
+    }
+}
